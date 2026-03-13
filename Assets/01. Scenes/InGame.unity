@@ -4833,6 +4833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1483571968}
   - component: {fileID: 1483571967}
+  - component: {fileID: 1483571983}
   - component: {fileID: 1483571970}
   - component: {fileID: 1483571971}
   - component: {fileID: 1483571982}
@@ -5161,6 +5162,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCharger
   inputData: {fileID: 11400000, guid: ff249edbbf2d04b459c15c321626e34a, type: 2}
   chargeSpeed: 20
+--- !u!114 &1483571983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483571966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f634644ff17445dbe87e0dc0a02d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EditorInputBridge
+  inputData: {fileID: 11400000, guid: ff249edbbf2d04b459c15c321626e34a, type: 2}
+  skillSystem: {fileID: 1483571974}
+  defenseSystem: {fileID: 1483571981}
+  playerInventory: {fileID: 1483571979}
 --- !u!1 &1500813448
 GameObject:
   m_ObjectHideFlags: 0
