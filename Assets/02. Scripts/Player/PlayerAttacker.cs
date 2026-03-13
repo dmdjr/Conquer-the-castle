@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerAttacker : MonoBehaviour
 {
     [SerializeField] private PlayerInputData inputData;
-    [SerializeField] private float attackDamage = 10f;
+    [SerializeField] private PlayerStats playerStats;
     [SerializeField] private float attackRangeX = 1.5f;  // 히트박스 가로
     [SerializeField] private float attackRangeY = 1f;    // 히트박스 세로
     [SerializeField] private LayerMask enemyLayer;
@@ -28,7 +28,8 @@ public class PlayerAttacker : MonoBehaviour
         var hits = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, enemyLayer);
         foreach (var hit in hits)
         {
-            hit.GetComponent<EnemyBase>()?.TakeDamage(attackDamage);
+            hit.GetComponent<EnemyBase>()?.TakeDamage(playerStats.AttackPower);
+            hit.GetComponent<BossBase>()?.TakeDamage(playerStats.AttackPower);
         }
     }
 

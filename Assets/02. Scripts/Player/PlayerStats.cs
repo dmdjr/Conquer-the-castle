@@ -12,6 +12,10 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private float maxMp = 100f;
     private float currentMp;
 
+    [Header("Attack")]
+    [SerializeField] private float attackPower = 10f;
+    public float AttackPower => attackPower;
+
     public event Action<float, float> onHpChanged; // (current, max)
     public event Action<float, float> onMpChanged; // (current, max)
 
@@ -54,5 +58,24 @@ public class PlayerStats : MonoBehaviour
     {
         currentMp = Mathf.Clamp(currentMp + amount, 0f, maxMp);
         onMpChanged?.Invoke(currentMp, maxMp);
+    }
+
+    public void IncreaseMaxHp(float amount)
+    {
+        maxHp += amount;
+        currentHp += amount;
+        onHpChanged?.Invoke(currentHp, maxHp);
+    }
+
+    public void IncreaseMaxMp(float amount)
+    {
+        maxMp += amount;
+        currentMp += amount;
+        onMpChanged?.Invoke(currentMp, maxMp);
+    }
+
+    public void IncreaseAttackPower(float amount)
+    {
+        attackPower += amount;
     }
 }
