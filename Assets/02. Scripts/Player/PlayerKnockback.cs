@@ -37,6 +37,7 @@ public class PlayerKnockback : MonoBehaviour
     private IEnumerator KnockbackRoutine(Vector2 direction)
     {
         inputData.SetKnockedBack(true);
+        inputData.SetCharging(false);  // 넉백 시 돌진 초기화
         rb.linearVelocity = direction * knockbackForce;
 
         yield return new WaitForSeconds(knockbackDuration);

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5349564821353755294}
   - component: {fileID: -7662686686482417716}
   - component: {fileID: 5046549184197830877}
+  - component: {fileID: 7060870855404500263}
   - component: {fileID: -5974786402495744918}
   - component: {fileID: 3882765401911196685}
   m_Layer: 6
@@ -142,6 +143,21 @@ MonoBehaviour:
   fragmentChance: 0.3
   hpPotionChance: 0.15
   mpPotionChance: 0.15
+--- !u!114 &7060870855404500263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328726906452208008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b8e63e4c06a4baeb7d1d4cd2945561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyKnockback
+  knockbackForce: 12
+  knockbackDuration: 0.4
+  enemyMover: {fileID: -7662686686482417716}
 --- !u!50 &-5974786402495744918
 Rigidbody2D:
   serializedVersion: 5
@@ -150,14 +166,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7328726906452208008}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -168,7 +184,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!70 &3882765401911196685
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

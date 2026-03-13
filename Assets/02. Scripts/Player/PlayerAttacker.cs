@@ -21,8 +21,8 @@ public class PlayerAttacker : MonoBehaviour
 
     private void PerformAttack()
     {
-        Vector2 attackCenter = (Vector2)transform.position
-            + Vector2.right * inputData.FacingDirection * (attackRangeX / 2f);
+        // 플레이어는 항상 오른쪽(적 방향)을 바라봄
+        Vector2 attackCenter = (Vector2)transform.position + Vector2.right * (attackRangeX / 2f);
         Vector2 attackSize = new Vector2(attackRangeX, attackRangeY);
 
         var hits = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, enemyLayer);
@@ -36,10 +36,8 @@ public class PlayerAttacker : MonoBehaviour
     // 씬 뷰에서 히트박스 확인용
     private void OnDrawGizmosSelected()
     {
-        if (inputData == null) return;
         Gizmos.color = Color.red;
-        Vector2 center = (Vector2)transform.position
-            + Vector2.right * inputData.FacingDirection * (attackRangeX / 2f);
+        Vector2 center = (Vector2)transform.position + Vector2.right * (attackRangeX / 2f);
         Gizmos.DrawWireCube(center, new Vector3(attackRangeX, attackRangeY, 0f));
     }
 }

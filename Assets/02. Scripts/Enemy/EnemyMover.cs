@@ -1,12 +1,25 @@
 using UnityEngine;
 
-// 역할: 적의 오른쪽 → 왼쪽 이동만 담당
+// 역할: Rigidbody2D velocity로 왼쪽 이동만 담당
+[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 2f;
 
-    private void Update()
+    private Rigidbody2D rb;
+    private bool isMoving = true;
+
+    private void Awake() => rb = GetComponent<Rigidbody2D>();
+
+    private void FixedUpdate()
     {
-        transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+        if (!isMoving) return;
+        rb.linearVelocity = new Vector2(-moveSpeed, rb.linearVelocity.y);
+    }
+
+    public void SetMoving(bool value)
+    {
+        isMoving = value;
+        if (!value) rb.linearVelocity = Vector2.zero;
     }
 }

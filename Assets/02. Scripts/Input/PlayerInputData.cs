@@ -5,31 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerInputData", menuName = "Conquer/PlayerInputData")]
 public class PlayerInputData : ScriptableObject
 {
-    public float MoveDirection { get; private set; }
-    public float FacingDirection { get; private set; } = 1f; // 1 = 오른쪽, -1 = 왼쪽
-
+    public bool IsCharging { get; private set; }
     public bool IsKnockedBack { get; private set; }
 
     public event Action onAttackRequested;
 
-    public void SetMoveDirection(float direction)
-    {
-        MoveDirection = direction;
-    }
-
-    public void SetFacingDirection(float direction)
-    {
-        if (direction != 0f)
-            FacingDirection = direction;
-    }
-
-    public void SetKnockedBack(bool value)
-    {
-        IsKnockedBack = value;
-    }
-
-    public void RequestAttack()
-    {
-        onAttackRequested?.Invoke();
-    }
+    public void SetCharging(bool value) { IsCharging = value; }
+    public void SetKnockedBack(bool value) { IsKnockedBack = value; }
+    public void RequestAttack() { onAttackRequested?.Invoke(); }
 }
