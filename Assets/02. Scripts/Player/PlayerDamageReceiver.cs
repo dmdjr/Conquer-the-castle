@@ -1,13 +1,11 @@
-using System;
 using UnityEngine;
 
-// 역할: 적과의 충돌 감지 및 무적 시간 적용 후 PlayerStats에 피해 전달만 담당
+// 역할: 적과의 충돌 감지, 방어 여부에 따라 피해 또는 방어 처리만 담당
 public class PlayerDamageReceiver : MonoBehaviour
 {
     [SerializeField] private PlayerStats playerStats;
+    [SerializeField] private DefenseSystem defenseSystem;
     [SerializeField] private float invincibleDuration = 1f;
-
-    public event Action<Vector2> onHit; // 넉백 방향 전달
 
     private float invincibleTimer = 0f;
     private bool isInvincible => invincibleTimer > 0f;
@@ -27,11 +25,18 @@ public class PlayerDamageReceiver : MonoBehaviour
         if (isInvincible) return;
         if (!collision.gameObject.CompareTag("Enemy")) return;
 
+        Vector2 hitDir = ((Vector2)(transform.position - collision.transform.position)).normalized;
+
+        // 방어 중이면 피해 없이 넉백만
+        if (defenseSystem.TryBlock(hitDir))
+        {
+            invincibleTimer = invincibleDuration;
+            return;
+        }
+
+        // 일반 피격: HP만 감소 (넉백 없음)
         float damage = collision.gameObject.GetComponent<EnemyBase>()?.AttackPower ?? 5f;
         playerStats.TakeDamage(damage);
         invincibleTimer = invincibleDuration;
-
-        Vector2 knockbackDir = ((Vector2)(transform.position - collision.transform.position)).normalized;
-        onHit?.Invoke(knockbackDir);
     }
 }

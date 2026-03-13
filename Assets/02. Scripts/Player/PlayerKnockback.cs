@@ -1,31 +1,31 @@
 using System.Collections;
 using UnityEngine;
 
-// 역할: 피격 이벤트를 받아 Rigidbody2D에 넉백 힘 적용만 담당
+// 역할: 방어 성공 이벤트를 받아 Rigidbody2D에 큰 넉백 힘 적용만 담당
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerKnockback : MonoBehaviour
 {
-    [SerializeField] private PlayerDamageReceiver damageReceiver;
+    [SerializeField] private DefenseSystem defenseSystem;
     [SerializeField] private PlayerInputData inputData;
-    [SerializeField] private float knockbackForce = 8f;
-    [SerializeField] private float knockbackDuration = 0.2f;
+    [SerializeField] private float knockbackForce = 15f;  // 방어 넉백은 크게
+    [SerializeField] private float knockbackDuration = 0.3f;
 
     private Rigidbody2D rb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        inputData.SetKnockedBack(false); // ScriptableObject 런타임 상태 초기화
+        inputData.SetKnockedBack(false);
     }
 
     private void OnEnable()
     {
-        damageReceiver.onHit += ApplyKnockback;
+        defenseSystem.onBlocked += ApplyKnockback;
     }
 
     private void OnDisable()
     {
-        damageReceiver.onHit -= ApplyKnockback;
+        defenseSystem.onBlocked -= ApplyKnockback;
     }
 
     private void ApplyKnockback(Vector2 direction)
