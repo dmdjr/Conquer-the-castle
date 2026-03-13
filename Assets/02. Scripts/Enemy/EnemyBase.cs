@@ -12,6 +12,8 @@ public class EnemyBase : MonoBehaviour
     public float AttackPower => attackPower;
     public int ExpReward => expReward;
 
+    public event Action<Vector3> onDied; // 드롭 스포너가 구독
+
     private EnemyPool pool;
     private Action onDefeatedCallback;
 
@@ -32,6 +34,7 @@ public class EnemyBase : MonoBehaviour
 
     protected virtual void Die()
     {
+        onDied?.Invoke(transform.position); // 풀 반환 전에 위치 전달
         onDefeatedCallback?.Invoke();
         pool.ReturnToPool(gameObject);
     }

@@ -44,6 +44,12 @@ public class PlayerStats : MonoBehaviour
         return true;
     }
 
+    public void Heal(float amount)
+    {
+        currentHp = Mathf.Clamp(currentHp + amount, 0f, maxHp);
+        onHpChanged?.Invoke(currentHp, maxHp);
+    }
+
     public void RestoreMp(float amount)
     {
         currentMp = Mathf.Clamp(currentMp + amount, 0f, maxMp);
