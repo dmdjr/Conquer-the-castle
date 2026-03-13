@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// 역할: PlayerInputData를 읽어 플레이어 이동 처리만 담당
+// 역할: PlayerInputData를 읽어 플레이어 이동 및 방향 처리만 담당
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMover : MonoBehaviour
 {
@@ -21,7 +21,8 @@ public class PlayerMover : MonoBehaviour
 
     private void Move()
     {
-        Debug.Log($"[PlayerMover] MoveDirection: {inputData.MoveDirection}");
+        if (inputData.IsKnockedBack) return;
         rb.linearVelocity = new Vector2(inputData.MoveDirection * moveSpeed, rb.linearVelocity.y);
+        inputData.SetFacingDirection(inputData.MoveDirection);
     }
 }
