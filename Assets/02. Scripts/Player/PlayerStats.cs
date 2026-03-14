@@ -24,11 +24,26 @@ public class PlayerStats : MonoBehaviour
     public float CurrentMp => currentMp;
     public float MaxMp => maxMp;
 
-    private void Start()
+    private void Awake()
     {
         currentHp = maxHp;
         currentMp = maxMp;
+    }
 
+    private void Start()
+    {
+        onHpChanged?.Invoke(currentHp, maxHp);
+        onMpChanged?.Invoke(currentMp, maxMp);
+    }
+
+    // 역할: 저장된 스탯 복원 (PlayerStatsPersistence에서 호출)
+    public void LoadStats(float savedMaxHp, float savedMaxMp, float savedAtk)
+    {
+        maxHp = savedMaxHp;
+        maxMp = savedMaxMp;
+        attackPower = savedAtk;
+        currentHp = maxHp;
+        currentMp = maxMp;
         onHpChanged?.Invoke(currentHp, maxHp);
         onMpChanged?.Invoke(currentMp, maxMp);
     }

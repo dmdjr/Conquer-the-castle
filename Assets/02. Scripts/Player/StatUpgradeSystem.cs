@@ -20,6 +20,17 @@ public class StatUpgradeSystem : MonoBehaviour
     public int AvailablePoints => availablePoints;
     public event Action onUpgradeChanged;
 
+    // 역할: 저장된 강화 횟수/포인트 복원 (PlayerStatsPersistence에서 호출)
+    // 스탯 수치는 PlayerStats.LoadStats에서 이미 복원되므로 여기서는 UI용 카운트만 복원
+    public void LoadUpgrades(int hpCount, int mpCount, int atkCount, int points)
+    {
+        upgradeCounts[0] = hpCount;
+        upgradeCounts[1] = mpCount;
+        upgradeCounts[2] = atkCount;
+        availablePoints = points;
+        onUpgradeChanged?.Invoke();
+    }
+
     public void AddPoint()
     {
         availablePoints++;

@@ -15,4 +15,9 @@ public class StageData : ScriptableObject
 
     [Header("Boss")]
     public GameObject bossPrefab;        // 스테이지 클리어 후 등장할 보스 프리팹
+
+    [Header("Clear")]
+    public GameObject equipmentDropPrefab; // 보스 처치 후 드롭할 장비 아이템 프리팹
+    public string equipmentName;           // 팝업에 표시할 장비 이름
+    public int nextStageIndex;             // 다음 스테이지 인덱스 (0-based, -1이면 마지막 스테이지)
 }

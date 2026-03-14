@@ -17,6 +17,14 @@ public class PlayerLevel : MonoBehaviour
     public event Action<int, int> onExpChanged;  // (currentExp, expToNextLevel)
     public event Action<int> onLevelUp;          // (newLevel)
 
+    // 역할: 저장된 레벨/EXP 복원 (PlayerStatsPersistence에서 호출)
+    public void LoadLevel(int savedLevel, int savedExp)
+    {
+        currentLevel = Mathf.Clamp(savedLevel, 1, MaxLevel);
+        currentExp = savedExp;
+        onExpChanged?.Invoke(currentExp, ExpToNextLevel);
+    }
+
     public void AddExp(int amount)
     {
         if (currentLevel >= MaxLevel) return;

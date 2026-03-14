@@ -18,3 +18,6 @@ MonoBehaviour:
   maxSimultaneous: 5
   spawnInterval: 2
   bossPrefab: {fileID: 0}
+  equipmentDropPrefab: {fileID: 0}
+  equipmentName: 
+  nextStageIndex: 2

@@ -13,6 +13,9 @@ public class EnemySpawner : MonoBehaviour
     private int spawnedCount = 0;
     private int activeEnemyCount = 0;
 
+    // StageManager가 Awake에서 주입
+    public void SetStageData(StageData data) => stageData = data;
+
     public void StartSpawning()
     {
         spawnedCount = 0;

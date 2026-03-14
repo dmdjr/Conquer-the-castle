@@ -18,3 +18,6 @@ MonoBehaviour:
   maxSimultaneous: 5
   spawnInterval: 2
   bossPrefab: {fileID: 5206267052870710619, guid: c41d96c6100b54993892a9c3e1c86e10, type: 3}
+  equipmentDropPrefab: {fileID: 3335627337793041535, guid: 326234f16660a48b8a9625c600c8eab9, type: 3}
+  equipmentName: "\uAE30\uC0AC\uC758 \uAC80"
+  nextStageIndex: 1

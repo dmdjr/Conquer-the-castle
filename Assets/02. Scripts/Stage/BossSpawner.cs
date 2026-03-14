@@ -1,13 +1,18 @@
+using System;
 using UnityEngine;
 
-// 역할: 잡몹 전멸 시 보스 스폰 및 보스 사망을 StageProgressTracker에 전달만 담당
+// 역할: 잡몹 전멸 시 보스 스폰, 보스 사망 이벤트 전달만 담당
 public class BossSpawner : MonoBehaviour
 {
     [SerializeField] private StageData stageData;
     [SerializeField] private Transform bossSpawnPoint;
-    [SerializeField] private StageProgressTracker progressTracker;
+
+    public event Action<Vector3> onBossDefeated; // BossDropper가 구독 (드롭 위치 전달)
 
     private BossBase currentBoss;
+
+    // StageManager가 Awake에서 주입
+    public void SetStageData(StageData data) => stageData = data;
 
     // StageProgressTracker.onAllEnemiesDefeated 에 연결
     public void SpawnBoss()
@@ -21,7 +26,8 @@ public class BossSpawner : MonoBehaviour
 
     private void OnBossDefeated()
     {
+        Vector3 dropPosition = currentBoss.transform.position;
         currentBoss.onBossDefeated -= OnBossDefeated;
-        progressTracker.OnBossDefeated();
+        onBossDefeated?.Invoke(dropPosition);
     }
 }

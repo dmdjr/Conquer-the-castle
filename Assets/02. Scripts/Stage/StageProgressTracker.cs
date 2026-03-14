@@ -13,6 +13,9 @@ public class StageProgressTracker : MonoBehaviour
     private int defeatedCount = 0;
     private bool bossSpawned = false;
 
+    // StageManager가 Awake에서 주입
+    public void SetStageData(StageData data) => stageData = data;
+
     public void OnEnemyDefeated()
     {
         defeatedCount++;
