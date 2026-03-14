@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: cbaf5e328ad3a4534923611747a16171
+guid: 4a3f0f7db72704d4ab639f1bde9ac5cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3571635775238715396
-    second: HURT_0
+      213: 1675591081817592477
+    second: WALK_0
   - first:
-      213: -6552392919759675800
-    second: HURT_1
+      213: 8567217733156871805
+    second: WALK_1
   - first:
-      213: -4191814458887339610
-    second: HURT_2
+      213: -844607794755927498
+    second: WALK_2
   - first:
-      213: -5703626821815436037
-    second: HURT_3
+      213: 8281386150497923764
+    second: WALK_3
+  - first:
+      213: 1733609291106537979
+    second: WALK_4
+  - first:
+      213: -6466037411978660262
+    second: WALK_5
+  - first:
+      213: 4313088863760870316
+    second: WALK_6
+  - first:
+      213: 110470969849003857
+    second: WALK_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,10 +121,142 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HURT_0
+      name: WALK_0
       rect:
         serializedVersion: 2
-        x: 33
+        x: 34
+        y: 21
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92dc841635e04710800000000000000
+      internalID: 1675591081817592477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WALK_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 21
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e1e32232fd4e670800000000000000
+      internalID: 8567217733156871805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WALK_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 21
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6320c038fa95744f0800000000000000
+      internalID: -844607794755927498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WALK_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 21
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2b444c3d46de270800000000000000
+      internalID: 8281386150497923764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WALK_4
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 21
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1d8b717740f0810800000000000000
+      internalID: 1733609291106537979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WALK_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 21
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5630aa7b350446a0800000000000000
+      internalID: -6466037411978660262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WALK_6
+      rect:
+        serializedVersion: 2
+        x: 612
         y: 21
         width: 26
         height: 38
@@ -124,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4083e2270dff09130800000000000000
-      internalID: 3571635775238715396
+      spriteID: cabe829487b2bdb30800000000000000
+      internalID: 4313088863760870316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HURT_1
+      name: WALK_7
       rect:
         serializedVersion: 2
-        x: 123
+        x: 708
         y: 21
-        width: 34
-        height: 38
+        width: 28
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,52 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86e90f40b593115a0800000000000000
-      internalID: -6552392919759675800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HURT_2
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 21
-        width: 34
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a18ca575fea3d5c0800000000000000
-      internalID: -4191814458887339610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HURT_3
-      rect:
-        serializedVersion: 2
-        x: 318
-        y: 21
-        width: 31
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfcfc4aef95a8d0b0800000000000000
-      internalID: -5703626821815436037
+      spriteID: 15fb7d303c8788100800000000000000
+      internalID: 110470969849003857
       vertices: []
       indices: 
       edges: []
@@ -210,10 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HURT_0: 3571635775238715396
-      HURT_1: -6552392919759675800
-      HURT_2: -4191814458887339610
-      HURT_3: -5703626821815436037
+      WALK_0: 1675591081817592477
+      WALK_1: 8567217733156871805
+      WALK_2: -844607794755927498
+      WALK_3: 8281386150497923764
+      WALK_4: 1733609291106537979
+      WALK_5: -6466037411978660262
+      WALK_6: 4313088863760870316
+      WALK_7: 110470969849003857
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

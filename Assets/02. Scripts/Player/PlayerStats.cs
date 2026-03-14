@@ -18,6 +18,7 @@ public class PlayerStats : MonoBehaviour
 
     public event Action<float, float> onHpChanged; // (current, max)
     public event Action<float, float> onMpChanged; // (current, max)
+    public event Action onDamaged;                 // 피격 시 (PlayerAnimator가 구독)
 
     public float CurrentHp => currentHp;
     public float MaxHp => maxHp;
@@ -52,6 +53,7 @@ public class PlayerStats : MonoBehaviour
     {
         currentHp = Mathf.Clamp(currentHp - amount, 0f, maxHp);
         onHpChanged?.Invoke(currentHp, maxHp);
+        onDamaged?.Invoke();
     }
 
     public bool UseMp(float amount)
