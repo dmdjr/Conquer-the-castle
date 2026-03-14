@@ -1,13 +1,11 @@
 using UnityEngine;
 
-// 역할: 적 사망 시 확률에 따라 드롭 아이템 스폰만 담당
+// 역할: 적 사망 시 확률에 따라 포션 드롭 스폰만 담당 (파편 드롭 제거됨)
 public class EnemyDropper : MonoBehaviour
 {
-    [SerializeField] private GameObject fragmentPrefab;
     [SerializeField] private GameObject hpPotionPrefab;
     [SerializeField] private GameObject mpPotionPrefab;
 
-    [Range(0f, 1f)] [SerializeField] private float fragmentChance = 0.3f;
     [Range(0f, 1f)] [SerializeField] private float hpPotionChance = 0.15f;
     [Range(0f, 1f)] [SerializeField] private float mpPotionChance = 0.15f;
 
@@ -30,7 +28,6 @@ public class EnemyDropper : MonoBehaviour
 
     private void SpawnDrops(Vector3 position)
     {
-        TrySpawn(fragmentPrefab, fragmentChance, position);
         TrySpawn(hpPotionPrefab, hpPotionChance, position);
         TrySpawn(mpPotionPrefab, mpPotionChance, position);
     }
