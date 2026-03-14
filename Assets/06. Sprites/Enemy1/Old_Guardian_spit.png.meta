@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: fce7a3bb90c634c4bbf79ac3834f801e
+guid: 6f5564eb7614b41bf95098f5edbc42c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3886918016296685562
-    second: Old_Guardian_death_0
+      213: 1353176525764537387
+    second: Old_Guardian_spit_0
   - first:
-      213: 5453863815543252456
-    second: Old_Guardian_death_1
+      213: -8690353987843369879
+    second: Old_Guardian_spit_1
   - first:
-      213: -8528716567945922169
-    second: Old_Guardian_death_2
+      213: 1973617074142947197
+    second: Old_Guardian_spit_2
   - first:
-      213: 409472952321719783
-    second: Old_Guardian_death_3
+      213: 1111971165863587393
+    second: Old_Guardian_spit_3
   - first:
-      213: 3698511049041240590
-    second: Old_Guardian_death_4
+      213: -6300155654085850728
+    second: Old_Guardian_spit_4
   - first:
-      213: 5474737177342605074
-    second: Old_Guardian_death_5
+      213: 6420610047089219788
+    second: Old_Guardian_spit_5
   - first:
-      213: -2475429753108213614
-    second: Old_Guardian_death_6
+      213: 509326664441496524
+    second: Old_Guardian_spit_6
   - first:
-      213: 7787069964638632098
-    second: Old_Guardian_death_7
-  - first:
-      213: 8203204165554557260
-    second: Old_Guardian_death_8
-  - first:
-      213: -1522282572122367872
-    second: Old_Guardian_death_9
+      213: 3192881020392657855
+    second: Old_Guardian_spit_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,11 +121,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Old_Guardian_death_0
+      name: Old_Guardian_spit_0
       rect:
         serializedVersion: 2
         x: 37
-        y: 1108
+        y: 868
         width: 52
         height: 62
       alignment: 0
@@ -142,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 600f19f68a4ee0ac0800000000000000
-      internalID: -3886918016296685562
+      spriteID: b2ca79871e277c210800000000000000
+      internalID: 1353176525764537387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_death_1
+      name: Old_Guardian_spit_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 988
-        width: 54
-        height: 58
+        x: 42
+        y: 748
+        width: 51
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e5efc29e3400bb40800000000000000
-      internalID: 5453863815543252456
+      spriteID: 964523e6719a56780800000000000000
+      internalID: -8690353987843369879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_death_2
+      name: Old_Guardian_spit_2
       rect:
         serializedVersion: 2
-        x: 30
-        y: 868
-        width: 62
-        height: 52
+        x: 42
+        y: 628
+        width: 50
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7893891f779e3a980800000000000000
-      internalID: -8528716567945922169
+      spriteID: d77afe2b542b36b10800000000000000
+      internalID: 1973617074142947197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_death_3
+      name: Old_Guardian_spit_3
       rect:
         serializedVersion: 2
-        x: 23
-        y: 747
-        width: 70
-        height: 41
+        x: 42
+        y: 508
+        width: 49
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ed344c0b7dbea500800000000000000
-      internalID: 409472952321719783
+      spriteID: 14ea6c542e38e6f00800000000000000
+      internalID: 1111971165863587393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_death_4
+      name: Old_Guardian_spit_4
       rect:
         serializedVersion: 2
-        x: 23
-        y: 627
-        width: 78
-        height: 42
+        x: 42
+        y: 388
+        width: 47
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e02e5fb1430c35330800000000000000
-      internalID: 3698511049041240590
+      spriteID: 8994b80ffc95198a0800000000000000
+      internalID: -6300155654085850728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_death_5
+      name: Old_Guardian_spit_5
       rect:
         serializedVersion: 2
-        x: 23
-        y: 507
-        width: 80
-        height: 42
+        x: 42
+        y: 268
+        width: 47
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2177126d47c2afb40800000000000000
-      internalID: 5474737177342605074
+      spriteID: cc89e0ae1d69a1950800000000000000
+      internalID: 6420610047089219788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_death_6
+      name: Old_Guardian_spit_6
       rect:
         serializedVersion: 2
-        x: 23
-        y: 387
-        width: 80
-        height: 42
+        x: 42
+        y: 148
+        width: 47
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2905d8341c185add0800000000000000
-      internalID: -2475429753108213614
+      spriteID: cc38bac17ed711700800000000000000
+      internalID: 509326664441496524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_death_7
+      name: Old_Guardian_spit_7
       rect:
         serializedVersion: 2
-        x: 23
-        y: 267
-        width: 80
-        height: 42
+        x: 41
+        y: 28
+        width: 43
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,52 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a8366b00ea311c60800000000000000
-      internalID: 7787069964638632098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Old_Guardian_death_8
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 146
-        width: 80
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4152e3e9b2a7d170800000000000000
-      internalID: 8203204165554557260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Old_Guardian_death_9
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 26
-        width: 80
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 088d0e8e014cfdae0800000000000000
-      internalID: -1522282572122367872
+      spriteID: fb357961f546f4c20800000000000000
+      internalID: 3192881020392657855
       vertices: []
       indices: 
       edges: []
@@ -360,16 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Old_Guardian_death_0: -3886918016296685562
-      Old_Guardian_death_1: 5453863815543252456
-      Old_Guardian_death_2: -8528716567945922169
-      Old_Guardian_death_3: 409472952321719783
-      Old_Guardian_death_4: 3698511049041240590
-      Old_Guardian_death_5: 5474737177342605074
-      Old_Guardian_death_6: -2475429753108213614
-      Old_Guardian_death_7: 7787069964638632098
-      Old_Guardian_death_8: 8203204165554557260
-      Old_Guardian_death_9: -1522282572122367872
+      Old_Guardian_spit_0: 1353176525764537387
+      Old_Guardian_spit_1: -8690353987843369879
+      Old_Guardian_spit_2: 1973617074142947197
+      Old_Guardian_spit_3: 1111971165863587393
+      Old_Guardian_spit_4: -6300155654085850728
+      Old_Guardian_spit_5: 6420610047089219788
+      Old_Guardian_spit_6: 509326664441496524
+      Old_Guardian_spit_7: 3192881020392657855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: f3985f4cecf584fbdb22741edaa2eb1b
+guid: 8d184b36a283c4ca883cb60552bbf18a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -65516033287178687
-    second: Old_Guardian_smoke_0
+      213: -418814019482310443
+    second: Old_Guardian_idle_0
   - first:
-      213: 7304164300693465161
-    second: Old_Guardian_smoke_1
+      213: 4593113386580443376
+    second: Old_Guardian_idle_1
   - first:
-      213: 6367266041019680753
-    second: Old_Guardian_smoke_2
+      213: 2328124406678355398
+    second: Old_Guardian_idle_2
+  - first:
+      213: 735139289068520764
+    second: Old_Guardian_idle_3
+  - first:
+      213: 1087538631452427569
+    second: Old_Guardian_idle_4
+  - first:
+      213: -2675093376530355407
+    second: Old_Guardian_idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Old_Guardian_smoke_0
+      name: Old_Guardian_idle_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 550
-        width: 7
-        height: 7
+        x: 37
+        y: 628
+        width: 52
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14633dcc38d371ff0800000000000000
-      internalID: -65516033287178687
+      spriteID: 5d8adc54ed2103af0800000000000000
+      internalID: -418814019482310443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_smoke_1
+      name: Old_Guardian_idle_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 430
-        width: 9
-        height: 9
+        x: 37
+        y: 508
+        width: 52
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9486ceb7bba9d5560800000000000000
-      internalID: 7304164300693465161
+      spriteID: 0f0083c2a440ebf30800000000000000
+      internalID: 4593113386580443376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_smoke_2
+      name: Old_Guardian_idle_2
       rect:
         serializedVersion: 2
-        x: 56
-        y: 75
-        width: 9
-        height: 244
+        x: 37
+        y: 388
+        width: 52
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f7c265aab21d5850800000000000000
-      internalID: 6367266041019680753
+      spriteID: 6cdfafc10d82f4020800000000000000
+      internalID: 2328124406678355398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_idle_3
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 268
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35cc59d94db33a00800000000000000
+      internalID: 735139289068520764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_idle_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 148
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1358c3f8f96b71f00800000000000000
+      internalID: 1087538631452427569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_idle_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 28
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b68ee4fb820ead0800000000000000
+      internalID: -2675093376530355407
       vertices: []
       indices: 
       edges: []
@@ -185,9 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Old_Guardian_smoke_0: -65516033287178687
-      Old_Guardian_smoke_1: 7304164300693465161
-      Old_Guardian_smoke_2: 6367266041019680753
+      Old_Guardian_idle_0: -418814019482310443
+      Old_Guardian_idle_1: 4593113386580443376
+      Old_Guardian_idle_2: 2328124406678355398
+      Old_Guardian_idle_3: 735139289068520764
+      Old_Guardian_idle_4: 1087538631452427569
+      Old_Guardian_idle_5: -2675093376530355407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

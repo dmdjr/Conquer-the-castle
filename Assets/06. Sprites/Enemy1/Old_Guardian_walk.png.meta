@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 8d184b36a283c4ca883cb60552bbf18a
+guid: 4c07f2af30d9a4967b7a6a004b5c3f7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -418814019482310443
-    second: Old_Guardian_idle_0
+      213: -415627551474194171
+    second: Old_Guardian_walk_0
   - first:
-      213: 4593113386580443376
-    second: Old_Guardian_idle_1
+      213: -7606972135281439449
+    second: Old_Guardian_walk_1
   - first:
-      213: 2328124406678355398
-    second: Old_Guardian_idle_2
+      213: 8373319199409715415
+    second: Old_Guardian_walk_2
   - first:
-      213: 735139289068520764
-    second: Old_Guardian_idle_3
+      213: 6800975054171698337
+    second: Old_Guardian_walk_3
   - first:
-      213: 1087538631452427569
-    second: Old_Guardian_idle_4
+      213: -6173662301519162139
+    second: Old_Guardian_walk_4
   - first:
-      213: -2675093376530355407
-    second: Old_Guardian_idle_5
+      213: -7967691022497336512
+    second: Old_Guardian_walk_5
+  - first:
+      213: -8000499071140908988
+    second: Old_Guardian_walk_6
+  - first:
+      213: 7776268819455118244
+    second: Old_Guardian_walk_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Old_Guardian_idle_0
+      name: Old_Guardian_walk_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 628
-        width: 52
-        height: 62
+        x: 41
+        y: 869
+        width: 49
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,19 +136,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d8adc54ed2103af0800000000000000
-      internalID: -418814019482310443
+      spriteID: 509e38ba1f46b3af0800000000000000
+      internalID: -415627551474194171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_idle_1
+      name: Old_Guardian_walk_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 27
+        y: 748
+        width: 75
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d414c752b9e6690800000000000000
+      internalID: -7606972135281439449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_walk_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 627
+        width: 78
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d836c7b271043470800000000000000
+      internalID: 8373319199409715415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_walk_3
+      rect:
+        serializedVersion: 2
+        x: 42
         y: 508
-        width: 52
+        width: 46
         height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f0083c2a440ebf30800000000000000
-      internalID: 4593113386580443376
+      spriteID: 1a4723657cae16e50800000000000000
+      internalID: 6800975054171698337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_idle_2
+      name: Old_Guardian_walk_4
       rect:
         serializedVersion: 2
-        x: 37
+        x: 47
         y: 388
-        width: 52
-        height: 60
+        width: 43
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,19 +224,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cdfafc10d82f4020800000000000000
-      internalID: 2328124406678355398
+      spriteID: 5e4dab2a8deb25aa0800000000000000
+      internalID: -6173662301519162139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Old_Guardian_idle_3
+      name: Old_Guardian_walk_5
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 268
-        width: 52
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0433afbca331d6190800000000000000
+      internalID: -7967691022497336512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_walk_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 147
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440bdc6bb7488f090800000000000000
+      internalID: -8000499071140908988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Guardian_walk_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 28
+        width: 36
         height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,52 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c35cc59d94db33a00800000000000000
-      internalID: 735139289068520764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Old_Guardian_idle_4
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 148
-        width: 52
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1358c3f8f96b71f00800000000000000
-      internalID: 1087538631452427569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Old_Guardian_idle_5
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 28
-        width: 52
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13b68ee4fb820ead0800000000000000
-      internalID: -2675093376530355407
+      spriteID: 4ab81957a4bdaeb60800000000000000
+      internalID: 7776268819455118244
       vertices: []
       indices: 
       edges: []
@@ -260,12 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Old_Guardian_idle_0: -418814019482310443
-      Old_Guardian_idle_1: 4593113386580443376
-      Old_Guardian_idle_2: 2328124406678355398
-      Old_Guardian_idle_3: 735139289068520764
-      Old_Guardian_idle_4: 1087538631452427569
-      Old_Guardian_idle_5: -2675093376530355407
+      Old_Guardian_walk_0: -415627551474194171
+      Old_Guardian_walk_1: -7606972135281439449
+      Old_Guardian_walk_2: 8373319199409715415
+      Old_Guardian_walk_3: 6800975054171698337
+      Old_Guardian_walk_4: -6173662301519162139
+      Old_Guardian_walk_5: -7967691022497336512
+      Old_Guardian_walk_6: -8000499071140908988
+      Old_Guardian_walk_7: 7776268819455118244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

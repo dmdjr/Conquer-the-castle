@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,12 +133,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 1108
-        width: 43
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 1080
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 987
-        width: 57
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 960
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,12 +177,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_2
       rect:
         serializedVersion: 2
-        x: 42
-        y: 868
-        width: 72
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 748
-        width: 68
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_4
       rect:
         serializedVersion: 2
-        x: 42
-        y: 628
-        width: 42
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,12 +243,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_5
       rect:
         serializedVersion: 2
-        x: 42
-        y: 508
-        width: 37
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_6
       rect:
         serializedVersion: 2
-        x: 42
-        y: 388
-        width: 70
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_7
       rect:
         serializedVersion: 2
-        x: 87
-        y: 400
-        width: 24
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,12 +309,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_8
       rect:
         serializedVersion: 2
-        x: 42
-        y: 268
-        width: 72
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,12 +331,12 @@ TextureImporter:
       name: Old_Guardian_attack_1_9
       rect:
         serializedVersion: 2
-        x: 42
-        y: 148
-        width: 72
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,33 +349,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Old_Guardian_attack_1_10
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 28
-        width: 72
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e41360f5888d125b0800000000000000
-      internalID: -5394792798391750322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 80344e06f04304ed5bef5baca7ca53bb
     internalID: 0
     vertices: []
     indices: 
@@ -383,11 +361,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":80.0,"y":120.0},"gridSpriteOffset":{"x":29.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Old_Guardian_attack_1_0: -3239388376269658781
       Old_Guardian_attack_1_1: 3007066878124259988
-      Old_Guardian_attack_1_10: -5394792798391750322
       Old_Guardian_attack_1_2: 5341057787620006724
       Old_Guardian_attack_1_3: -8126475497322089829
       Old_Guardian_attack_1_4: 5863078891563915169
