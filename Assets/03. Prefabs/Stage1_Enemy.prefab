@@ -137,12 +137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db37423b0f064c23995afa2ebfe6a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDropper
-  fragmentPrefab: {fileID: 5141967525713489400, guid: ec87793f776fd4e46a8e397ce4b8d761, type: 3}
   hpPotionPrefab: {fileID: 5517904279672125531, guid: 9afaaa21cc95c4f0eb5387ed4c565c8c, type: 3}
   mpPotionPrefab: {fileID: 9691725912538962, guid: 53c1e19b3b6974467a42f6e0eafc9bfc, type: 3}
-  fragmentChance: 0.3
-  hpPotionChance: 0.15
-  mpPotionChance: 0.15
+  hpPotionChance: 0.5
+  mpPotionChance: 0.5
 --- !u!114 &7060870855404500263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyKnockback
   knockbackForce: 12
   knockbackDuration: 0.4
+  chainRadius: 0.8
   enemyMover: {fileID: -7662686686482417716}
 --- !u!50 &-5974786402495744918
 Rigidbody2D:

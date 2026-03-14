@@ -5,13 +5,17 @@ public class DropItem : MonoBehaviour
 {
     [SerializeField] private DropType dropType;
 
+    private bool collected = false;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (collected) return;
         if (!other.CompareTag("Player")) return;
 
         var inventory = other.GetComponent<PlayerInventory>();
         if (inventory == null) return;
 
+        collected = true;
         inventory.AddItem(dropType);
         gameObject.SetActive(false);
     }
